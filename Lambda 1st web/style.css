@@ -1,0 +1,48 @@
+body {
+  background: white;
+  font-size: 28px;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+span {
+  color: olivedrab;
+}
+#header {
+  height: 0px;
+  transform: translate(0%, 30%);
+}
+h1 {
+  background-color: rgb(247, 183, 100);
+}
+h3 {
+  margin: 30px;
+  padding: 2px;
+
+  background-color: rgb(247, 183, 100);
+}
+p {
+  margin: 2px;
+  padding: 2px;
+  transform: translate(0%, -30%);
+  background-color: rgb(255, 225, 186);
+}
+#top {
+  background-color: olivedrab;
+}
+ul {
+  width: 360px;
+  border: 2px rgb(255, 225, 186);
+  text-align: left;
+  background-color: rgb(255, 225, 186);
+}
+li {
+  padding: 5px;
+  margin: 3px;
+  width: 250px;
+  background-color: rgb(247, 183, 100);
+  font-size: 24px;
+  display: block;
+}
