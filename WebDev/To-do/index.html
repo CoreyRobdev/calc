@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>Notepad</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo"></div>
+      <div class="navigation">
+        <ul id="list">
+          <li><a href="#post1">What to do Today!</a></li>
+          <li><a href="#post2">Passwords</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main id="main">
+      <div class="content">
+        <div class="create-post">
+          <input id="title" type="text" placeholder="  Title">
+          <div class="container">
+            <textarea id="paragraph" placeholder=" What's on your mind?" row="2" col="10"></textarea>
+            <button class="submit-post" onclick="post()">Post</button>
+          </div>
+        </div>
+
+        <div id="post1" class="post">
+          <h1 class="post-title">What to do today!</h1>
+          <p class="post-content">Walk the dog, finish poject, idk.</p>
+        </div>
+
+        <div id="post2" class="post">
+          <h1 class="post-title">Passwords</h1>
+          <p class="post-content">Google: dasfkjgsf Facebook: dsafoiasg@! YouTube: 53420@hjgfdn</p>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+  font-size: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  color: hsl(0, 11%, 12%);
+}
+
+section {
+  background-color: hsl(185, 75%, 39%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.card {
+  width: 350px;
+  border-radius: 20px;
+  background-color: white;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+
+.card-header {
+  background-image: url(images/bg-pattern-card.svg);
+  background-size: cover;
+  height: 150px;
+}
+.card-body {
+  padding: 0 20px 25px;
+}
+
+.img-holder {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid white;
+  overflow: hidden;
+  margin: -50px auto 30px auto;
+}
+
+.img-holder img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.name-age {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+.age, .city, .meta {
+  font-weight: 400;
+  color: hsl(0, 11%, 12%);
+  opacity: .6;
+}
+.age {
+  margin-left: 6px
+}
+
+.city {
+  font-size: .9rem;
+}
+
+.card-footer {
+  border-top: 1px solid hsl(0, 3%, 86%);
+  display: flex;
+  padding: 0 30px;
+}
+
+.card-footer .item {
+  flex: 1;
+  height: 100px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.card-footer .item .value {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.card-footer .item .meta {
+  font-size: .6rem;
+  letter-spacing: 1px;
+}
+
+/*Graphic Circles*/
+.circles .circle-1, .circles .circle-2 {
+  position:absolute;
+  animation: 2s circles forwards;
+  opacity: 0;
+}
+.circles .circle-1 {
+  top:-300px;
+  left:-300px;
+  transform: translate(-100px, -50px);
+}
+.circles .circle-2 {
+  bottom: -300px;
+  right: -300px;
+  transform: translate(100px, 50px);
+}
+@keyframes circles {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
